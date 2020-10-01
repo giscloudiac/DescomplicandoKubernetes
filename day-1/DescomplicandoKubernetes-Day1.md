@@ -1118,7 +1118,7 @@ Antes de inicializarmos o *cluster*, vamos efetuar o *download* das imagens que 
 Execute o comando a seguir também apenas no nó *master* para a inicialização do cluster. Caso tudo esteja bem, será apresentada ao término de sua execução o comando que deve ser executado nos demais nós para ingressar no *cluster*.
 
 ```
-# kubeadm init
+# kubeadm init {em alguns casos --apiserver-cert-extra-sans IPpublicoOUdominio}
 ```
 
 A opção _--apiserver-advertise-address_ informa qual o endereço IP em que o servidor de API irá escutar. Caso este parâmetro não seja informado, a interface de rede padrão será usada.
